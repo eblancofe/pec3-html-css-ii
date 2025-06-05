@@ -1,0 +1,25 @@
+<!--
+Alumno: Eugenio Blanco Fernández
+Aula: 01
+Asignatura: Herramientas HTML y CSS II
+## PEC3 - UOC Boilerplate ##
+Se propone partiendo del desarrollo de la (PEC2), una web de 2 páginas+portada, partiendo de UOC Boilerplate, 
+en el cual, se deberán aplicar los conocimientos adquiridos en el módulo 4.2 Atomic CSS y Tailwind CSS v3.
+-->
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+<body>
+  <div class="uoc-container">
+    <include src="./views/header_index.html"></include><!-- cabecera principal de página -->
+    <include src="./views/main.html"></include><!-- cuerpo principal de página -->
+  </div>
+  <include src="./views/footer.html"></include><!-- pie de página -->
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+</html>

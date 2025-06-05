@@ -1,0 +1,11 @@
+<!-- Componente posthtml-iclude, para reutilizar la creación de botones -->
+<!-- se utilizan variables locales, las cuales tienen el siguiente significado:
+variable vinculo = URL dinámica del enlace.
+variable clase = Clases Tailwind dinámicas.
+variable text = Texto visible del enlace.
+En la parte del código HTML se completa de la siguiente forma:
+        <include src="../src/views/button.html"
+          locals='{ "text": "Formulario", "vinculo": "#", "clase": "boton-principal" }'>
+        </include>
+-->
+<a href="{{ vinculo }}" class="{{ clase }}">{{ text }}</a>

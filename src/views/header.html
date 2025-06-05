@@ -1,0 +1,35 @@
+<header><!-- Cabecera del menú principal del Boilerplate -->
+  <!-- Contenido del menú -->
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-10"><!-- cuadrícula de 1col.+ espaciado + media min.768px + 10col. --> 
+    <div class="md:mt-6"><!-- media min.768px + margen superior -->
+      <picture><!-- Mostramos logotipo principal -->
+        <source srcset="./assets/images/logo-jornadas-economia.png?as=webp&width=50" type="image/webp" />
+        <img src="./assets/images/logo-jornadas-economia.png?width=50" alt="Jornadas de Economía Circular"
+          class="uoc-logo" />
+      </picture>
+    </div>
+    <!-- logo y texto de cabecera principal -->
+    <div class="md:col-span-3"><!-- media min.768px + 3col.agrupadas -->
+      <p class="logo-jde text-center md:text-left">JdE</p>
+      <p class="logo-jde text-center md:text-left">Jornadas de Economía</p>
+    </div>
+    <!-- enlaces del menú principal -->
+    <div class="md:text-center md:col-span-6"><!-- media min.768px + centrar texto + 6col.agrupadas -->
+      <p>
+        <!-- Componente botón "Participantes" -->
+        <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+        <include src="../src/views/button.html"
+          locals='{ "text": "Participantes", "vinculo": "./p2_participantes.html", "clase": "boton-principal" }'></include>
+        <!-- Componente botón "Artículos" -->
+        <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+        <include src="../src/views/button.html"
+          locals='{ "text": "Artículos", "vinculo": "./p3_articulos.html", "clase": "boton-principal" }'></include>
+        <!-- Componente botón "Formulario" -->
+        <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+        <include src="../src/views/button.html"
+          locals='{ "text": "Formulario", "vinculo": "#", "clase": "boton-principal" }'>
+        </include>
+      </p>
+    </div>
+  </div>
+</header><!-- Fin de cabecera del menú principal del Boilerplate -->

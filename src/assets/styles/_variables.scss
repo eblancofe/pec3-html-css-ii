@@ -1,0 +1,51 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+$master-bg: #8FAC95; //color fondo del boilerplate
+$container1-bg: #445147; //color de letra del container principal
+$container-bg: color.scale($container1-bg, $lightness: 80%); //color fondo del container
+$mqMinWidth: 320px;
+
+@layer base {
+  //definición de variables en Tailwind CSS
+  :root {
+  --color-primary: #445147; 
+  --color-secondary: #4e5a25;
+  --uoc-corporate: #000078;
+  --color-bg-boilerplate: #8FAC95; //color fondo del boilerplate
+  --color-fuente-container: #445147; //color de letra del container principal
+  --color-bg-container: color.scale($container1-bg, $lightness: 80%); //color fondo del container
+  }
+}
+
+.btn-primary-brown {
+  @apply py-2 px-5 bg-[var(--color-primary)] text-white font-semibold rounded-xl shadow-md hover:bg-[var(--color-secondary)] focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+}
+
+.logo-jde {
+  @apply font-bold text-balance leading-none text-[var(--color-primary)] text-3xl pb-2;
+}
+
+.footer-principal {
+  @apply mt-6 text-xs bg-[var(--uoc-corporate)] font-bold text-white p-5 grid grid-cols-1 max-sm:text-center max-sm:justify-center max-sm:items-center md:grid-cols-4 md:justify-center md:items-center max-md:text-center;
+}
+
+.texto-principal {
+  @apply text-[var(--color-primary)] text-justify;
+}
+
+.boton-principal {
+  @apply border-none text-[var(--color-fuente-container)] px-5 py-4 text-center no-underline inline-block text-base;
+}
+
+.boton-rrss {
+  @apply border-none text-[var(--color-fuente-container)] px-2 py-4 text-center no-underline inline-block text-base hover:text-blue-900;
+}

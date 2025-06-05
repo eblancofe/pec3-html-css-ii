@@ -1,0 +1,36 @@
+<!-- Inicio de cuerpo principal -->
+<main>
+  <div class="grid grid-cols-1 gap-4 p-4"><!-- cuadrícula de 1col.+ espaciado + espacio entre elementos -->
+    <p class="texto-principal mb-4"><!-- clase principal + espaciado superior -->
+      Al pulsar en el siguiente botón, se le redireccionará a la "Página 1", con el contenido de una de las páginas que componen la anterior 
+      práctica (PEC 2), en este caso, será la correspondiente a la (PEC 3).
+    </p>
+    <p>	 
+      <!-- Componente botón 1 -->
+      <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+      <include src="../src/views/button.html" 
+        locals='{ "text": "Página 1", "vinculo": "./p2_participantes.html", "clase": "btn-primary-brown mb-10" }'></include>
+    </p>
+    <p class="texto-principal mt-6 mb-4"><!-- clase principal + margen superior e inferior -->
+      En este enlace, se le redireccionará a la "Página 2", al igual que ocurre con el botón anterior, este se corresponde con otra de las páginas de 
+      la anterior práctica (PEC 2), siendo la actual respectivamente a la (PEC3).
+    </p>
+    <p>
+      <!-- Componente botón 2 -->
+      <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+      <include src="../src/views/button.html" 
+        locals='{ "text": "Página 2", "vinculo": "./p3_articulos.html", "clase": "btn-primary-brown mb-10" }'></include>
+    </p>
+    <p class="texto-principal mt-6 mb-4"><!-- clase principal + margen superior e inferior -->
+      En este enlace, se le redireccionará a la "Página 3", esta página no forma parte de a anterior práctica (PEC2), además de que el contenido de la misma
+      es diferente, tiene como particularidad, que su código, se ha creado de forma inicial en (IA) y perfilándolo de manera sutíl algunas de sus partes.
+      Formando parte de la actual practica (PEC3).
+    </p>
+    <p>
+      <!-- Componente botón 3 -->
+      <!-- Se inserta botón parametrizado mediante variables y utilizando el componente "PosHTML-include" -->
+      <include src="../src/views/button.html"
+        locals='{ "text": "Página 3", "vinculo": "./p1_pec3-ia.html", "clase": "btn-primary-brown mb-10" }'></include>
+    </p>
+  </div>
+</main><!-- fin de cuerpo principal -->

@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $master-bg;
+  color: $container1-bg;
+}
+
+.uoc-container {
+  width: auto;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: $container-bg;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.uoc-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  height: auto;
+
+  @media (min-width: $mqMinWidth) {
+    max-width: none;
+  }
+}
+
+.uoc-title {
+  font-family: $font-family-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $container1-bg;
+}
+
+//Configuración para navegadores antiguos sin soporte de CSS-Display:Grid
+@supports (not (display: grid)) {
+  @media (min-width: 320px) {
+    .uoc-footer {
+      @apply flex flex-col items-center p-4; 
+    }
+  }//de media >320
+  @media (min-width: 768px) {
+    .uoc-footer {
+      @apply flex flex-col items-center p-4 text-center;
+    }
+  }//de media >768
+  @media (min-width: 1024px) {
+    .uoc-footer {
+      @apply flex flex-col items-center p-4 text-center;
+    }
+  }//de media >1024
+}//de support no soportado por navegador Web

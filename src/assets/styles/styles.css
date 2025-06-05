@@ -1,0 +1,209 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Fuente utilizada */
+    background: #fff;
+    color: #333;
+}
+
+/* Barra de navegación principal */
+.navbar {
+    display: flex; /* Para alinear elementos en fila */
+    justify-content: space-between; /* Espaciado entre título y menú */
+    padding: 20px 40px;
+    align-items: center; /* Alineación vertical */
+    flex-wrap: wrap; /* Permite que las cards se bajen en pantallas pequeñas */
+}
+
+/* Lista de navegación */
+.navbar ul {
+    display: flex;
+    list-style: none; /* Quita los puntos de lista */
+    gap: 20px; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Permite que las cards se bajen en pantallas pequeñas */
+}
+
+/* Estilo para los enlaces del menú */
+.navbar a {
+    text-decoration: none; /* Quita el subrayado */
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #000;
+}
+
+/* Enlace activo */
+.navbar .active {
+    background-color: black;
+    color: white;
+}
+
+/* Sección de introducción */
+.intro {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 1.5em;
+}
+
+/* Subtítulo de la sección */
+.intro h2 {
+    font-size: 2.5em;
+    padding-top: 5%;
+}
+
+/* Imagen principal (hero image) */
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+
+/* Sección de recetas */
+.recipes {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.recipes h3 {
+    font-size: 2rem;
+    color: #111;
+}
+
+/* Contenedor de las cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 90px; /* Espacio entre las cards */
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap; /* Permite que las cards se bajen en pantallas pequeñas */
+}
+
+/* Cada tarjeta (card) individual */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    padding: 20px;
+    width: 300px;
+    min-height: 150px;
+    margin-top: 5%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título de cada card */
+.card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #111;
+    text-align: left;
+    padding-bottom: 10%;
+}
+
+/* Pie de la card: autor y descripción */
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Imagen del autor */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    flex-shrink: 0; /* Evita que se reduzca */
+}
+
+/* Contenedor del texto del autor */
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+}
+
+/* Nombre del autor */
+.author {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    padding-bottom: 2%;
+    
+}
+
+/* Descripción del plato */
+.desc {
+    margin: 4px 0 0 0;
+    color: #666;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    width: 240px;
+}
+
+/* Otra clase de descripción con distinto ancho */
+.desc_2 {
+    margin: 4px 0 0 0;
+    color: #666;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    width: 260px;
+}
+
+/* Pie de página (footer) */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+    padding-top: 15%; /* Espaciado superior */
+}
+
+/* Texto de título en footer */
+.footer-left p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de iconos sociales */
+.footer-left .socials a {
+    margin-right: 10%;
+    font-size: 20px;    
+}
+
+/* Tabla de la parte derecha del footer */
+.footer-table table {
+    border-collapse: collapse; /* Quita separación entre celdas */
+}
+
+/* Celdas de la tabla */
+.footer-table th,
+.footer-table td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Iconos sociales en general */
+.socials a {
+    margin-right: 25%;
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s; /* Animación al pasar el ratón */
+}
+
+/* Espaciado para la sección social del footer */
+.espacio_rrss {
+    padding-bottom: 40%;
+}
